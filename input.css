@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@layer components {
+
+    html {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      @apply font-['Nunito_Sans']
+    }
+    *, *:before, *:after {
+      -webkit-box-sizing: inherit;
+      -moz-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+
+    .animated {
+      transition: all 350ms ease-in-out 50ms;
+      @apply opacity-0
+    }
+
+    .shown {
+      @apply opacity-100 translate-y-[-5px]
+    }
+
+    .blogimg {
+      @apply m-2 mx-auto max-w-[85%] md:max-w-[70%] lg:max-w-[55%] w-full border-[#2b2b2b5e] border-[1px]
+    }
+
+  }
+
+@tailwind utilities;
+
